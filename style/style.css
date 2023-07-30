@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --primaryTextColor: #232e35; /* Untuk title atau judul */
+  --secondaryTextColor: #656d72; /* Untuk text biasa seperti paragraph contohnya */
+
+  --borderColor: #f1f1f1;
+  --lineColor: #d9d9d9; /* untuk line di pre-title */
+
+  --primaryBackgroundColor: #fff;
+  --secondaryBackgroundColor: #fbfbfb;
+  --thirdBackgroundColor: #f5f3fe;
+
+  --primaryIconColor: #7e74f1;
+  --primaryIconColorHover: #5d51e8;
+
+  --sectionPadding: 6rem 0;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--primaryTextColor);
+}
+
+p {
+  font-size: 1rem; /* 16px */
+  line-height: 1.9rem;
+}
+
+p,
+span,
+label,
+input,
+textarea,
+li {
+  color: var(--secondaryTextColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+/* button */
+.btn {
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 1.5px solid var(--borderColor);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn :hover {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+/* logo and nav menu */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.logo a {
+  color: var(--primaryTextColor);
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: var(--primaryTextColor);
+}
+
+/* burger */
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 7px;
+  transition: all 0.3s;
+  z-index: 99;
+}
+
+.burger {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  top: 33px;
+  right: 35px;
+}
