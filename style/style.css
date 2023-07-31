@@ -332,3 +332,87 @@ nav ul li a {
 .education-years {
   margin-bottom: 3rem;
 }
+
+/* the dot on the line */
+.education .line div::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: var(--borderColor);
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
+.skills-right ul {
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+/* contact section */
+#contact {
+  padding: var(--sectionPadding);
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.contact-form div {
+  margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  font-family: "Roboto", sans-serif;
+  background: var(--secondaryBackgroundColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 3px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9d9fa1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #7d7d7d;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  background-color: var(--primaryIconColor);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: var(--primaryIconColorHover);
+}
+
+.contact-item-icon {
+  background: var(--thirdBackgroundColor);
+  width: 53px;
+  height: 53px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
