@@ -407,6 +407,12 @@ nav ul li a {
   background-color: var(--primaryIconColorHover);
 }
 
+.contact-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .contact-item-icon {
   background: var(--thirdBackgroundColor);
   width: 53px;
@@ -415,4 +421,12 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact-item-icon svg {
+  fill: var(--primaryIconColor);
+}
+
+.contact-item-detail h4 {
+  margin-bottom: 0.6rem;
 }
