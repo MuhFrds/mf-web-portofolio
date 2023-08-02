@@ -25,6 +25,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   /* transform: scale(0.9); */
@@ -173,7 +177,7 @@ nav ul li a {
 
 /* hero section */
 #hero {
-  height: 720px; /* 720px */
+  height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -434,13 +438,13 @@ nav ul li a {
 /* footer */
 
 footer {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: var(--secondaryBackgroundColor);
   text-align: center;
 }
 
 .footer-icons {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer-icons a {
